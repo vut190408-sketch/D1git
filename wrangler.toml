@@ -15,4 +15,4 @@ ADMIN_TOKEN = "@admin"
 [[d1_databases]]
 binding       = "DB"
 database_name = "quiz-database"
-database_id   = "YOUR-DATABASE-ID-HERE"
+database_id   = "469ce0bf-082f-49c8-aacc-8294760ec09f"
