@@ -1,16 +1,7 @@
-name = "d1-api-worker"
-main = "worker.js"
-compatibility_date = "2024-05-22"
+name = "server_tom"
+compatibility_date = "2026-05-22"
 
-[vars]
-# Mở toang bảo mật để test (false = tắt bảo mật IP)
-ENABLE_SECURITY = false
-
-# Danh sách IP được phép (chỉ có tác dụng khi ENABLE_SECURITY = true)
-ALLOWED_IPS = "127.0.0.1, 192.168.1.1"
-
-# Cấu hình kết nối cơ sở dữ liệu D1
 [[d1_databases]]
 binding = "DB"
-database_name = "ten-database-d1-cua-ban"
-database_id = "id-database-cua-ban"
+database_name = "server_tom"
+database_id = "469ce0bf-082f-49c8-aacc-8294760ec09f"
