@@ -1,16 +1,18 @@
-name = "server_tom"
-main = "_worker.js"
-compatibility_date = "2026-05-22"
+# ============================================================
+#  wrangler.toml  –  Cloudflare Workers config
+#  Thay YOUR-DATABASE-ID bằng ID thật từ dashboard D1
+# ============================================================
 
-[[d1_databases]]
-binding = "DB"
-database_name = "server_tom"
-database_id = "469ce0bf-082f-49c8-aacc-8294760ec09f"
+name              = "quiz-worker"
+main              = "_worker.js"
+compatibility_date = "2024-11-01"
 
+# ── Biến môi trường ────────────────────────────────────────
 [vars]
-# "false": Mở khóa toàn bộ CORS cho mọi người, dễ dàng test trên localhost.
-# "true": Bật bảo mật, chỉ các tên miền ở ALLOWED_ORIGINS mới được gọi API.
-ENABLE_SECURITY = "false" 
+ADMIN_TOKEN = "@admin"
 
-# Danh sách các trang web được phép truy cập khi bật bảo mật (cách nhau bằng dấu phẩy)
-ALLOWED_ORIGINS = "https://trang-web-cua-ban.com, http://localhost:3000"
+# ── Kết nối D1 Database ────────────────────────────────────
+[[d1_databases]]
+binding       = "DB"
+database_name = "quiz-database"
+database_id   = "YOUR-DATABASE-ID-HERE"
