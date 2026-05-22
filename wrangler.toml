@@ -1,4 +1,5 @@
 name = "server_tom"
+main = "_worker.js"
 compatibility_date = "2026-05-22"
 
 [[d1_databases]]
